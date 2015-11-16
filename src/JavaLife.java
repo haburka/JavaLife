@@ -1,4 +1,3 @@
-package com.laboon;
 
 public class JavaLife {
 
@@ -15,7 +14,7 @@ public class JavaLife {
 	System.out.println("Initial Configuration:");
 	System.out.println(w.toString());
 	for (int j=0; j < maxIterations; j++) {
-	    w = w.iterate();
+	    w.iterate();
 	    System.out.println("Iteration " + (j + 1) + ":");
 	    System.out.println(w.toString());
 	}

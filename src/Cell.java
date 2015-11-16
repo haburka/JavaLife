@@ -1,4 +1,3 @@
-package com.laboon;
 
 public class Cell {
 
@@ -11,11 +10,16 @@ public class Cell {
      * Public getter for the cell
      * @return Current state of the cell
      */
-	
+
     public State state() {
 	return _state;
     }
-	
+
+    public void setCell(State st, int xLoc, int yLoc) {
+    	_state = st;
+    	_xLoc = xLoc;
+    	_yLoc = yLoc;
+    }
     /**
      * Returns whether or not the cell is alive. 
      * @return True if cell alive, false if dead
